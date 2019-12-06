@@ -1,6 +1,6 @@
 package log
 
-import "github.com/chanxuehong/log/trace"
+import "log/trace"
 
 var _ trace.Tracer = (*logger)(nil)
 
