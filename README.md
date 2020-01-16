@@ -27,6 +27,11 @@ func main(){
     	}
 	log.InfoContext(ctx, "the rand Int result", "v", v)
 }
-
 ```
 
+This use is made of the key and the Value output.
+
+
+### License
+
+This is free software distributed under the terms of the MIT license
