@@ -1,11 +1,9 @@
 package v1
 
 import (
+	"log/uuid/rand"
 	"os"
 	"sync"
-
-	"github.com/chanxuehong/internal"
-	"github.com/chanxuehong/rand"
 )
 
 //   +------ 0 ------+------ 1 ------+------ 2 ------+------ 3 ------+
@@ -27,7 +25,7 @@ func hash(x uint64) uint64 {
 	return (x ^ x>>6 ^ x>>12 ^ x>>18 ^ x>>24 ^ x>>30 ^ x>>36 ^ x>>42 ^ x>>48 ^ x>>54 ^ x>>60) & 0x3f
 }
 
-var xNode = internal.MAC[:] // read only.
+var xNode = MAC[:] // read only.
 
 const xSequenceMask uint32 = 0x3FFF // 14bits
 

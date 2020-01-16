@@ -1,8 +1,10 @@
-package rand
+package v1
 
 import (
 	"bytes"
 	"net"
+
+	"log/uuid/rand"
 )
 
 var MAC [6]byte = getMAC() // One MAC of this machine; Particular case, it is a random bytes.
@@ -64,7 +66,7 @@ func getMAC() (mac [6]byte) {
 
 // generates a random MAC.
 func genMAC() (mac [6]byte) {
-	Read(mac[:])
+	rand.Read(mac[:])
 	mac[0] |= 0x01 // multicast
 	return
 }
