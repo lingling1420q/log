@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"net"
 
-	"log/uuid/rand"
+	"github.com/KeKe-Li/log/uuid/rand"
 )
 
 var MAC [6]byte = getMAC() // One MAC of this machine; Particular case, it is a random bytes.

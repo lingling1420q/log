@@ -1,6 +1,6 @@
 package log
 
-import "log/trace"
+import "github.com/KeKe-Li/log/trace"
 
 var _ trace.Tracer = (*logger)(nil)
 

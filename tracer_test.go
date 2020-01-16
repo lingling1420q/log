@@ -3,7 +3,7 @@ package log
 import (
 	"testing"
 
-	"log/trace"
+	"github.com/KeKe-Li/log/trace"
 )
 
 func TestIsTracer(t *testing.T) {
