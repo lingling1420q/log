@@ -2,8 +2,9 @@ package uuid
 
 import (
 	"crypto/sha1"
-	v1 "log/uuid/v1"
-	v2 "log/uuid/v2"
+
+	v1 "github.com/KeKe-Li/log/uuid/v1"
+	v2 "github.com/KeKe-Li/log/uuid/v2"
 )
 
 //   +------ 0 ------+------ 1 ------+------ 2 ------+------ 3 ------+

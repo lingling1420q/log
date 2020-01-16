@@ -1,9 +1,10 @@
 package v1
 
 import (
-	"log/uuid/rand"
 	"os"
 	"sync"
+
+	"github.com/KeKe-Li/log/uuid/rand"
 )
 
 //   +------ 0 ------+------ 1 ------+------ 2 ------+------ 3 ------+

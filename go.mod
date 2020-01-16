@@ -1,3 +1,3 @@
-module log
+module github.com/KeKe-Li/log
 
 go 1.13
